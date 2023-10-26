@@ -1,0 +1,133 @@
+:root {
+	// =================================================================
+	--primary: 		#1A232E; // Site main color - (Основний колір сайту)
+	--secondary: 	#25618B; // Site secondary color - (Додатковий колір сайту)
+	--hover-primary:#409bdb;
+	--success:		#198755;
+	--error:		#DC3445;
+	--warning:		#FEC107;
+	--white:		#FFFFFF;
+	--black:		#000000;
+
+	// Background colors (Фонові кольори):
+	// =================================================================
+	//--bg-accent: 	#FFE8D4; // BG accent - наприклад, може бути використаний для встановлення кольору фону для акцентних елементів, таких як кнопки або іконки.
+	 --bg-primary: 	#1A232E; // BG primary background color - (Основний фоновий колір сайту)
+	// --bg-secondary: #172432; // BG secondary background color - (Додатковий фоновий колір сайту)
+	--bg-inverse: rgba(255, 255, 255, 0.08);
+	--hover-primary:#003258;
+
+	// Text colors (Текстові кольори):
+	// =================================================================
+	//--text-secondary:	#767E86; // Text secondary text color - (Додатковий текстовий колір сайту)
+	 --text-primary: --white; // Text primary text color - (Основний текстовий колір сайту)
+	 --text-inverse: #B0B0B0; // Text inverse - наприклад, може використовуватися для налаштування кольору тексту на темному фоні.
+	//--text-accent: #e8eddf; // Text accent - наприклад, може використовуватися для встановлення кольору тексту для акцентних елементів на сторінці, таких як заголовки або кнопки.
+	
+	// Cлои:
+	// =================================================================
+	--z-index-top 		:100;
+	--z-index-section 	:50;
+	--z-index-art 		:25;
+	--z-indexi-tem 		:10;
+
+	// --f1:				'Rubik', sans-serif;;   
+	// --f2:				'Playfair Display', serif;;
+	// --f3:				'Mulish', sans-serif;;
+
+	// --gap-card:			rem(25);
+	// --gap-arrow: 		rem(40);
+	// --pcx:				rem(24);
+	// --pcy:				rem(40);
+	// --p100:				5.208333vw; /* 100/1920 rem(100)*/;
+	// --p140:  			7.291667vw; /* 140/1920 rem(140)*/;
+	// --container: 		97.25rem;
+}
+body {
+	min-width: 320px;
+	background-color: var(--bg-primary);
+	color: var(--white);
+	font-family: "Eudoxus Sans", sans-serif;;
+	font-size: 1rem;
+	letter-spacing: normal;
+	line-height:normal;
+	font-style: normal;
+	font-weight: 400;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	@supports (overflow: clip) {
+		overflow: clip;
+	}
+	> main {
+		flex: 1 1 auto;
+	}
+	> * {
+		min-width: 0;
+	}
+}
+[class$="__container"] {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-inline: 15px;
+}
+h1{
+	// font-size: 144px;
+	font-size:clamp(2.222rem, 9.286vw + 0.571rem, 8rem);
+	font-weight: 700;
+	line-height: 110%;
+	letter-spacing: -0.18rem;
+}
+h2{
+	font-size: clamp(2rem, 2.857vw + 1.429rem, 4rem);
+	font-weight: 700;
+	line-height: 120%;
+	letter-spacing: -0.08rem;
+}
+h3{
+	font-size: clamp(1.75rem, 1.25vw + 1.5rem, 2.625rem);
+	line-height: 125%;
+	letter-spacing: -0.0525rem;
+}
+h4{
+	font-size: clamp(1.25rem, 1.071vw + 1.036rem, 2rem);
+	font-weight: 700;
+	letter-spacing: -0.04rem;
+	position: relative;
+}
+h5{
+	font-size: 24px;
+	font-weight: 700;
+}
+h6{
+	font-size: 16px;
+	letter-spacing: .005rem;
+}
+svg, path{
+	transition: all 0.3s ease-in-out;
+}
+.ibg{
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+section:first-of-type{
+margin-top:clamp(3.125rem, 4.464vw + 2.232rem, 6.25rem);
+}
+img{
+	transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,119 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--f2);
+  line-height: normal;
+}
+
+h1 {
+  @include adaptiveValue("font-size", 84, 40,0,1440,320);
+
+}
+
+h2 {
+  @include adaptiveValue("font-size", 64, 40,0,1440,320);
+  position: relative;
+  width: fit-content;
+  &::after{
+    position: absolute;
+    content:'';
+    bottom: rem(-20);
+    left: 0;
+    height: rem(3);
+    width: 58.629442%;
+    background-color:var(--primary);
+  }
+}
+
+h3 {
+  @include adaptiveValue("font-size", 54, 40,0,768,320);
+}
+
+h4 {
+  @include adaptiveValue("font-size", 28, 24,0,768,320);
+}
+
+h5 {
+  @include adaptiveValue("font-size", 24, 18,0,768,320);
+}
+
+a {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  svg {
+    width: rem(30.975);
+    height: rem(30.975);
+    path {
+      transition: all 0.3s ease-in-out;
+      fill: var(--white);
+    }
+    &:hover path {
+      fill: var(--primary);
+    }
+  }
+}
+
+header *{
+  a{
+    font-size: rem(20);
+    color: var(--white);
+    
+  }
+}
+
+header *{
+  ul {
+    li {
+      a {
+        font-size: rem(20);
+        color: var(--white);
+        position: relative;
+        &::after{
+          position: absolute;
+          content:'';
+          bottom: rem(-4);
+          left: 0;
+          width: 0;
+          height: rem(3);
+          background-color: var(--primary);
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          color: var(--primary);
+          transition: all 0.3s ease-in-out;
+        }
+        &.active{
+          font-weight: 500;
+          &::after{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+footer *{
+  ul {
+    li {
+      a {
+        color: var(--white);
+        &:hover {
+          color: var(--primary);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.primary{
+  color: var(--primary);
+}
