@@ -105,3 +105,4 @@ export const heroSocials = [
     url: "/icons/instagram.svg",
   },
 ];
+
