@@ -14,8 +14,8 @@ const GetStarted = ({}) => {
           initial="hidden"
           whileInView="show"
         >
-          <Image className="getStarted__planer-Up" src="/GetStarted/get-started-1.png" alt="panet" width={432} height={432} />
-          <Image className="getStarted__planer-Down" src="/GetStarted/get-started-2.png" alt="panet" width={569} height={265} />
+          <Image className="getStarted__planer-Up" src="/GetStarted/get-started-1.png" alt="panet" width={432} height={432} loading="lazy"/>
+          <Image className="getStarted__planer-Down" src="/GetStarted/get-started-2.png" alt="panet" width={569} height={265} loading="lazy"/>
         </motion.div>
         <motion.div className="getStarted__info"
                   variants={slideIn("right",'spring',0,1.5)}

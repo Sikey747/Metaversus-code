@@ -38,6 +38,7 @@ const World = ({}) => {
             alt="map"
             width={1170}
             height={526}
+            loading="lazy"
           />
 
           <div className="people-point people-point-v1 ibg">
@@ -102,6 +103,7 @@ const World = ({}) => {
                   alt="map"
                   width={196}
                   height={150}
+                  loading="lazy"
                 />
                 <Image
                   className="map__box-img blur"
@@ -109,6 +111,7 @@ const World = ({}) => {
                   alt="map"
                   width={196}
                   height={150}
+                  loading="lazy"
                 />
                 <div className="info-box__inner">
                   <div className="people-box">
@@ -119,6 +122,7 @@ const World = ({}) => {
                         alt="map"
                         width={24}
                         height={24}
+                        loading="lazy"
                       />
                       <Image
                         className="people-box__img"
@@ -126,6 +130,7 @@ const World = ({}) => {
                         alt="map"
                         width={24}
                         height={24}
+                        loading="lazy"
                       />
                       <Image
                         className="people-box__img"
@@ -133,6 +138,7 @@ const World = ({}) => {
                         alt="map"
                         width={24}
                         height={24}
+                        loading="lazy"
                       />
                     </div>
                     <p>+ 264 has joined</p>
@@ -147,6 +153,7 @@ const World = ({}) => {
                   alt="map"
                   width={196}
                   height={150}
+                  loading="lazy"
                 />
                 <Image
                   className="map__box-img blur"
@@ -154,6 +161,7 @@ const World = ({}) => {
                   alt="map"
                   width={196}
                   height={150}
+                  loading="lazy"
                 />
                 <div className="info-box__inner">
                   <div className="people-box">
@@ -164,6 +172,7 @@ const World = ({}) => {
                         alt="map"
                         width={24}
                         height={24}
+                        loading="lazy"
                       />
                       <Image
                         className="people-box__img"
@@ -171,6 +180,7 @@ const World = ({}) => {
                         alt="map"
                         width={24}
                         height={24}
+                        loading="lazy"
                       />
                       <Image
                         className="people-box__img"
@@ -178,6 +188,7 @@ const World = ({}) => {
                         alt="map"
                         width={24}
                         height={24}
+                        loading="lazy"
                       />
                     </div>
                     <p>+ 453 has joined</p>
