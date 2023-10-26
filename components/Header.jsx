@@ -6,7 +6,7 @@ import {navVariants} from './../utils/motion.js';
 import { motion } from "framer-motion";
 
 const Header = ({}) => {
-  const [position, setPosition] = useState(window.scrollY)
+  const [position, setPosition] = useState(0)
   const [visible, setVisible] = useState(true) 
 
   useEffect(()=> {
