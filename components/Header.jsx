@@ -11,7 +11,6 @@ const Header = ({}) => {
 
   useEffect(()=> {
     const handleScroll = () => {
-      if (typeof window !== 'undefined') {
        const startHide = 0 // Спрятать скрол после столько пикселей
        let moving = window.scrollY
        setVisible( (moving < startHide) || (position > moving));
@@ -21,7 +20,6 @@ const Header = ({}) => {
     return(() => {
        window.removeEventListener("scroll", handleScroll);
     })
-  }
 })
 
 const cls = visible ? "visible" : "hidden";

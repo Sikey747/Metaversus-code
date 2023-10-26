@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^14.0.0",
     "@uidotdev/usehooks": "^2.4.1",
     "css-to-tailwindcss": "^1.0.4",
     "framer-motion": "^10.16.4",
