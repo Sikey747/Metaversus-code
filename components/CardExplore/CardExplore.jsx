@@ -10,7 +10,7 @@ const CardExplore = ({imgUrl,selected,title,id,toggleOpenCard,...props}) => {
 
   return (
     <motion.div {...props} className={cn} id={id} onClick={()=>toggleOpenCard(id)}>
-      <Image src={imgUrl} alt={title} height={353} width={563} />
+      <Image src={imgUrl} alt={title} height={353} width={563} loading="lazy"/>
       {!selected && <h4 className="h4__vertical">{title}</h4>}
       {selected && <h4 className="h4_horizontal" >{title}</h4>}
 

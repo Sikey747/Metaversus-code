@@ -37,8 +37,8 @@ const WhatsNew = ({}) => {
                            initial="hidden"
                            whileInView="show"
           >
-            <Image className="whatsNew__planer-Up" src="/WhatsNew/whats-new-1.png" alt="panet" width={432} height={432} />
-            <Image className="whatsNew__planer-Down" src="/WhatsNew/whats-new-2.png" alt="panet" width={569} height={265} />
+            <Image className="whatsNew__planer-Up" src="/WhatsNew/whats-new-1.png" alt="panet" width={432} height={432} loading="lazy"/>
+            <Image className="whatsNew__planer-Down" src="/WhatsNew/whats-new-2.png" alt="panet" width={569} height={265} loading="lazy"/>
           </motion.div>
       </div>
     </section>

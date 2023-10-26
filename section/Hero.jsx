@@ -26,7 +26,7 @@ const Hero = ({}) => {
               viewport={{once: true} }
               >
                 <a href="#">
-                  <Image src={el.url} alt={el.name} width={24} height={24} />
+                  <Image src={el.url} alt={el.name} width={24} height={24}      />
                 </a>
               </motion.li>
             );
@@ -49,7 +49,7 @@ const Hero = ({}) => {
           whileInView="show"
           viewport={{once: true} }
         >
-          <Image src="/Hero/cover.png" alt="bg" width={1305} height={488} />
+          <Image src="/Hero/cover.png" alt="bg" width={1305} height={488} loading="lazy" />
           <Link
             className="hero__decor ibg"
             to="footer"
@@ -62,6 +62,7 @@ const Hero = ({}) => {
               alt="decor"
               width={155}
               height={155}
+              loading="lazy"
             />
           </Link>
         </motion.div>

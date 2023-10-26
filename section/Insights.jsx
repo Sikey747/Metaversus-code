@@ -29,6 +29,7 @@ const Insights = ({}) => {
                     src={el.imgUrl}
                     width={270}
                     height={250}
+                    loading="lazy"
                   />
                 </div>
                 <div className="insights__info">
