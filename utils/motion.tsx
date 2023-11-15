@@ -18,7 +18,7 @@ export const navVariants = {
     },
   },
 };
-export const delays =(delay)=> ({
+export const delays =(delay:number)=> ({
   transition: {
     type: 'spring',
     stiffness: 300,
@@ -27,7 +27,7 @@ export const delays =(delay)=> ({
     delay,
   },
 })
-export const slideIn = (direction, type, delay, duration) => ({
+export const slideIn = (direction:"left"|'up'|'right'|'down', type:"spring"|"tween", delay:number, duration:number) => ({
   hidden: {
     x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
     y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
@@ -52,7 +52,7 @@ export const slideIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const staggerContainer = (staggerChildren, delayChildren) => ({
+export const staggerContainer = (staggerChildren?:string, delayChildren?:string) => ({
   hidden: {},
   show: {
     transition: {
@@ -62,7 +62,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
   },
 });
 
-export const textVariant = (delay) => ({
+export const textVariant = (delay:number) => ({
   hidden: {
     y: 50,
     opacity: 0,
@@ -104,7 +104,7 @@ export const textVariant2 = {
   },
 };
 
-export const fadeIn = (direction, type, delay, duration) => ({
+export const fadeIn = (direction:"left"|'up'|'right'|'down', type:"spring"|"tween", delay:number, duration:number) => ({
   hidden: {
     x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
     y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
@@ -129,7 +129,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const planetVariants = (direction) => ({
+export const planetVariants = (direction:"left"|'up'|'right'|'down') => ({
   hidden: {
     x: direction === 'left' ? '-100%' : '100%',
     rotate: 120,
@@ -145,7 +145,7 @@ export const planetVariants = (direction) => ({
   },
 });
 
-export const zoomIn = (delay, duration) => ({
+export const zoomIn = (delay:number, duration:number) => ({
   hidden: {
     scale: 0,
     opacity: 0,

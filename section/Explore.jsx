@@ -3,7 +3,7 @@
 import { exploreWorlds } from "./../constants/index.js";
 import CardExplore from "./../components/CardExplore/CardExplore.jsx";
 import { useState } from "react";
-import { slideIn } from "./../utils/motion.js";
+import { slideIn } from "../utils/motion.tsx";
 import { motion } from "framer-motion";
 
 const Explore = ({}) => {

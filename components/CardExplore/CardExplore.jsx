@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { slideIn, delayChildren } from '../../utils/motion.js';
+
 
 const CardExplore = ({imgUrl,selected,title,id,toggleOpenCard,...props}) => {
     let cn="card-explore ibg ";

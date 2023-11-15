@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { footerSocials } from "./../constants/index.js";
-import { fadeIn } from './../utils/motion.js';
+import { footerSocials } from "./../constants/index";
+import { fadeIn } from '../utils/motion.tsx';
 import { motion } from "framer-motion";
 
 const Footer = ({}) => {
@@ -21,7 +21,7 @@ const Footer = ({}) => {
             return (
               <li key={el.name} className="footer__item">
                 <a href="#">
-                  <Image src={el.url} alt={el.name} width={24} height={24} />
+                  <Image src={el.url} alt={el.name} width={24} height={24} loading="lazy"  />
                 </a>
               </li>
             );

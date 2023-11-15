@@ -3,12 +3,12 @@
 import { heroSocials } from "./../constants/index.js";
 import Image from "next/image";
 import { Link } from "react-scroll";
-import {  motion} from "framer-motion";
+import { motion } from "framer-motion";
 import {
   textVariant,
   slideIn,
   delayChildren,
-} from "./../utils/motion.js";
+} from "../utils/motion.tsx";
 
 const Hero = ({}) => {
   return (
@@ -26,7 +26,7 @@ const Hero = ({}) => {
               viewport={{once: true} }
               >
                 <a href="#">
-                  <Image src={el.url} alt={el.name} width={24} height={24}      />
+                  <Image src={el.url} alt={el.name} width={24} height={24} priority={true} sizes="100vw"   />
                 </a>
               </motion.li>
             );
@@ -49,7 +49,7 @@ const Hero = ({}) => {
           whileInView="show"
           viewport={{once: true} }
         >
-          <Image src="/Hero/cover.png" alt="bg" width={1305} height={488} loading="lazy" />
+          <Image src="/Hero/cover.png" alt="bg" width={1305} height={488} priority={true} />
           <Link
             className="hero__decor ibg"
             to="footer"
@@ -62,7 +62,7 @@ const Hero = ({}) => {
               alt="decor"
               width={155}
               height={155}
-              loading="lazy"
+              priority={true}
             />
           </Link>
         </motion.div>

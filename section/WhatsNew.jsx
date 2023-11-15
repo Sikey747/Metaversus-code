@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import {newFeatures} from './../constants/index';
-import { slideIn } from './../utils/motion.js';
+import { slideIn } from '../utils/motion.tsx';
 import { motion } from "framer-motion";
 
 const WhatsNew = ({}) => {

@@ -4,7 +4,7 @@ import { Pin } from "@/public/icons";
 import Image from "next/image";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useState,useEffect  } from "react";
-import { slideIn } from './../utils/motion.js';
+import { slideIn } from '../utils/motion.tsx';
 import { motion } from "framer-motion";
 
 
@@ -39,6 +39,7 @@ const World = ({}) => {
             width={1170}
             height={526}
             loading="lazy"
+            sizes="100vw"
           />
 
           <div className="people-point people-point-v1 ibg">

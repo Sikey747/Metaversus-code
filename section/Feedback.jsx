@@ -1,7 +1,7 @@
 "use client";
 
 import {Headset} from "/public/icons/index"
-import { slideIn } from './../utils/motion.js';
+import { slideIn } from '../utils/motion.tsx';
 import { motion } from "framer-motion";
 
 const Feedback = ({}) => {

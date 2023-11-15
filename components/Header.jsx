@@ -2,7 +2,7 @@
 
 import React, {useState, useEffect} from "react";
 import { Menu, Search } from "@/public/icons";
-import {navVariants} from './../utils/motion.js';
+import {navVariants} from '../utils/motion.tsx';
 import { motion } from "framer-motion";
 
 const Header = ({}) => {
